@@ -5,13 +5,73 @@
     android:layout_height="fill_parent"
     android:id="@+id/layout"
     >
-    <ListView android:id="@+id/list"
+    <!--<ListView android:id="@+id/list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dip"-->
+        <!--android:layout_weight="1"-->
+        <!--android:transcriptMode="alwaysScroll"-->
+        <!--android:cacheColorHint="#00000000"-->
+        <!--android:listSelector="@android:color/transparent"/>-->
+    <Button
+        android:id="@+id/db_click_button"
+        android:text="dbclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp"/>
+    <Button
+        android:id="@+id/left_click_button"
+        android:text="left click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"/>
+    <Button
+        android:id="@+id/right_click_button"
+        android:text="right click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20sp"
+        >
+        <Button
+            android:id="@+id/back_button"
+            android:text="back"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/forward_button"
+            android:text="forward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/connect_layout"
         android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1"
-        android:transcriptMode="alwaysScroll"
-        android:cacheColorHint="#00000000"
-        android:listSelector="@android:color/transparent"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <EditText android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/connect_edit_text"
+            android:layout_weight="1"/>
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connect_button"
+            android:layout_gravity="center_vertical"
+            android:text="connect" />
+    </LinearLayout>
+
+
+
 
     <LinearLayout android:id="@+id/footer"
         android:layout_width="fill_parent"
